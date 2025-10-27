@@ -4,9 +4,9 @@ import campaigns from "../../data/campaigns.json";
 
 const CampaignSection = () => {
     return (
-        <section className="w-full flex flex-col gap-10 md:gap-16">
+        <section className="w-full flex flex-col gap-10 md:gap-16 p-10 sm:px-15 sm:py-15 lg:px-20 lg:py-20 xl:px-30 2xl:px-40">
             <div className="flex flex-col items-center gap-4 2xl:gap-6">
-                <h1 className="text-2xl font-bold w-min border-t-2 border-primary pt-2 lg:text-4xl 2xl:text-5xl">Campanhas</h1>
+                <h2 className="text-2xl font-bold w-min border-t-2 border-primary pt-2 lg:text-4xl 2xl:text-5xl">Campanhas</h2>
                 <p className="text-center text-sm max-w-xs md:text-base md:max-w-sm lg:text-lg 2xl:text-xl 2xl:max-w-md">Conheça algumas de nossas campanhas, <b>passe para o lado</b> e veja mais!</p>
             </div>
             <div>
@@ -32,8 +32,8 @@ const CampaignSection = () => {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselNext className="hidden lg:flex lg:border-0 lg:shadow-none"/>
-                    <CarouselPrevious className="hidden lg:flex lg:border-0 lg:shadow-none"/>
+                    <CarouselNext className="hidden cursor-pointer lg:flex lg:border-0 lg:shadow-none"/>
+                    <CarouselPrevious className="hidden cursor-pointer lg:flex lg:border-0 lg:shadow-none"/>
                 </Carousel>
             </div>
         </section>

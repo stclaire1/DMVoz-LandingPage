@@ -1,10 +1,10 @@
-import logo from '../../assets/white-logo.png';
+import logo from '../../assets/images/white-logo.png';
 import { Button } from '../ui/button';
-import sound from '../../assets/sound.png';
+import sound from '../../assets/images/sound.png';
 
 const HeroSection = () => {
   return (
-    <header className='bg-[url(assets/background.png)] bg-cover bg-center'>
+    <header className='bg-[url(assets/images/background.png)] bg-cover bg-center'>
       <div className='flex flex-col items-center gap-6 p-10 lg:px-20 xl:gap-12 2xl:px-30 2xl:py-18' >
           <img src={logo} alt='Logo DMVoz Produções' className='w-[110px] md:w-[150px] lg:w-1/6' />
           <div className='flex flex-col items-center'>
