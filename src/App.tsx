@@ -1,3 +1,4 @@
+import AboutUsSection from "./components/AboutUsSection"
 import CampaignSection from "./components/CampaignSection"
 import Footer from "./components/Footer"
 import HeroSection from "./components/HeroSection"
@@ -11,6 +12,7 @@ function App() {
     <main className="flex flex-col items-center">
       <CampaignSection />
       <SpecialtiesSection />
+      <AboutUsSection />
     </main>
     <Footer />
     </>
