@@ -11,9 +11,6 @@ const SpecialtiesSection = () => {
 
     const audioRefs = useRef<Array<React.RefObject<HTMLAudioElement>>>([]);
 
-
-
-
     const handleEnded = useCallback((index: number) => {
         setIsPlaying(prev => ({ ...prev, [index]: false }));
     }, []);

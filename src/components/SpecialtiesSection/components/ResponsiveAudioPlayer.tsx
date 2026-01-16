@@ -32,8 +32,6 @@ const ResponsiveAudioPlayer = ({ index, isActive, onPlayPause, isPlaying, audioR
 			setDuration(audioEl.duration);
 		};
 		const handleEnded = () => {
-			// Apenas dispara evento visual, não toca novamente
-			// O SpecialtiesSection deve atualizar isPlaying para false
 		};
 		audioEl.addEventListener('timeupdate', handleTimeUpdate);
 		audioEl.addEventListener('loadedmetadata', handleLoadedMetadata);
