@@ -4,6 +4,7 @@ import ResponsiveAudioPlayer from './components/ResponsiveAudioPlayer';
 import audiosData from '../../data/audios.json';
 import type { Audio } from '../../types/audio';
 import { Button } from '../ui/button';
+import { audioMap } from '../../lib/audioMap';
 
 const SpecialtiesSection = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -75,9 +76,9 @@ const SpecialtiesSection = () => {
     return (
         <section className="w-full bg-[url(assets/images/background2.png)] bg-cover bg-center">
             <div className='flex flex-col items-center gap-6 py-10 sm:gap-10 sm:px-15 sm:py-15 md:gap-12 lg:px-20 lg:py-20 xl:px-30 2xl:px-40'>
-                <div className="flex flex-col items-center gap-6 px-10">
-                    <h2 className="text-white text-shadow-lg text-2xl font-bold lg:text-4xl 2xl:text-5xl ">Especialidades</h2>
-                    <p className="text-white text-shadow-lg text-base text-center lg:text-lg 2xl:text-xl">Confira alguns de nossos trabalhos mais recentes!</p>
+                <div className="flex flex-col items-center gap-6">
+                    <h2 className="text-white text-shadow-lg text-2xl font-bold lg:text-4xl 2xl:text-5xl">Especialidades</h2>
+                    <p className="text-white text-shadow-lg text-base text-center lg:text-lg">Confira alguns de nossos trabalhos mais recentes!</p>
                 </div>
                 <div className="w-full max-w-2xl bg-[#000000b8] px-9 pt-4 pb-8 sm:rounded-lg sm:px-10">
                     {(audiosData as Audio[]).map((audio, index) => (
@@ -94,7 +95,7 @@ const SpecialtiesSection = () => {
                                         {audio.title}
                                     </h3>
                                 </div>
-                                <a href={`/src/assets/audios/${audio.file}`} download>
+                                <a href={audioMap[audio.file]} download>
                                     <FaDownload size={20} color="white" className="ml-5" />
                                 </a>
                             </div>
@@ -113,7 +114,7 @@ const SpecialtiesSection = () => {
                                         controls
                                         className="w-full hidden sm:block bg-transparent"
                                     >
-                                        <source src={`/src/assets/audios/${audio.file}`} type="audio/mpeg" />
+                                        <source src={audioMap[audio.file]} type="audio/mpeg" />
                                         Seu navegador não suporta o elemento de áudio.
                                     </audio>
                                 </div>

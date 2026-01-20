@@ -1,7 +1,7 @@
 export interface Campaign {
   videoId: string;
   title: string;
-  Description: string;
+  description: string;
 }
 
 export type Campaigns = Campaign[];

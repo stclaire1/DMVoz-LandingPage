@@ -1,6 +1,7 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
 import type { Campaigns } from "../../types/campaign";
 import campaigns from "../../data/campaigns.json";
+import Autoplay from "embla-carousel-autoplay"
 
 const CampaignSection = () => {
     return (
@@ -11,9 +12,15 @@ const CampaignSection = () => {
             </div>
             <div>
                 <Carousel className="w-full mx-auto"
+                plugins={[
+                    Autoplay({
+                        delay: 5000,
+                        stopOnInteraction: false,
+                        stopOnMouseEnter: true,
+                    }),
+                ]}
                 opts={{
-                    loop: true,
-                    
+                    loop: true
                 }}>
                     <CarouselContent>
                         {(campaigns as Campaigns).map((campaign) => (
@@ -26,7 +33,7 @@ const CampaignSection = () => {
                                     />
                                     <div className="flex flex-col gap-4 text-center md:text-start">
                                         <h3 className="mt-3 text-xl font-semibold md:mt-0 lg:text-2xl 2xl:text-3xl">{campaign.title}</h3>
-                                        <p className="text-justify text-sm lg:text-lg 2xl:text-xl">{campaign.Description}</p>
+                                        <p className="text-justify text-sm lg:text-base">{campaign.description}</p>
                                     </div>
                                 </div>
                             </CarouselItem>

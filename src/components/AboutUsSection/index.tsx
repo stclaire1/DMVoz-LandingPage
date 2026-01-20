@@ -11,18 +11,18 @@ const AboutUsSection = () => {
             <div className="flex flex-col gap-12 md:w-1/2 md:gap-7 xl:w-3/5 2xl:w-1/2">
                 <div>
                     <h2 className="text-2xl font-bold w-fit border-t-2 border-primary pt-2 mb-5 lg:text-4xl 2xl:text-5xl">Sobre nós</h2>
-                    <p className="text-justify text-sm lg:text-lg 2xl:text-xl"><b>Denys</b> é a voz e a alma da DMVoz! Com vasta experiência no mercado publicitário, atua como <b>locutor, produtor e diretor,</b> oferecendo serviços de alta qualidade diretamente de seu Studio.</p>
+                    <p className="text-justify text-sm lg:text-base"><b>Denys</b> é a voz e a alma da DMVoz! Com vasta experiência no mercado publicitário, atua como <b>locutor, produtor e diretor,</b> oferecendo serviços de alta qualidade diretamente de seu Studio.</p>
                 </div>
                 <div className="border border-primary rounded-lg p-5">
                     <h2 className="text-2xl font-semibold text-primary mb-3">Missão</h2>
-                    <p className="text-justify text-sm lg:text-lg 2xl:text-xl">Nossa missão é fornecer serviços de <b>locução, produção e direção</b> que agreguem valor ao mercado publicitário. Com dedicação e profissionalismo, buscamos criar conteúdos que envolvam e impactem o público, ajudando nossos clientes a alcançarem seus objetivos a partir da nossa comunicação.</p>
+                    <p className="text-justify text-sm lg:text-base">Nossa missão é fornecer serviços de <b>locução, produção e direção</b> que agreguem valor ao mercado publicitário. Com dedicação e profissionalismo, buscamos criar conteúdos que envolvam e impactem o público, ajudando nossos clientes a alcançarem seus objetivos a partir da nossa comunicação.</p>
                 </div>
-                <div className="border border-secondary rounded-lg p-5 md:hidden">
+                <div className="border border-secondary rounded-lg p-5 md:hidden xl:block">
                     <h2 className="text-2xl font-semibold text-secondary mb-3">Visão</h2>
-                    <p className="text-justify text-sm lg:text-lg 2xl:text-xl">Ser reconhecido como uma referência no mercado publicitário, destacando-se pela <b>qualidade, inovação e comprometimento</b> em todos os projetos. Almejamos expandir nosso alcance, consolidando parcerias duradouras e inspirando confiança em todos os segmentos em que atuamos.</p>
+                    <p className="text-justify text-sm lg:text-base">Ser reconhecido como uma referência no mercado publicitário, destacando-se pela <b>qualidade, inovação e comprometimento</b> em todos os projetos. Almejamos expandir nosso alcance, consolidando parcerias duradouras e inspirando confiança em todos os segmentos em que atuamos.</p>
                 </div>
             </div>
-            <div className="hidden md:flex md:flex-col md:w-1/2 2xl:w-2/6">
+            <div className="hidden md:flex md:flex-col md:w-1/2">
                 <div className="grid grid-cols-3 grid-rows-3 gap-2 w-full h-auto">
                     <img
                         src={mainImage}
