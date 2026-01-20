@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { FaPlay, FaTimes, FaDownload } from 'react-icons/fa';
 import ResponsiveAudioPlayer from './components/ResponsiveAudioPlayer';
 import audiosData from '../../data/audios.json';
-import type { Audio } from '../../types/audio';
+import type { Audios } from '../../types/audio';
 import { Button } from '../ui/button';
 import { audioMap } from '../../lib/audioMap';
 
@@ -81,7 +81,7 @@ const SpecialtiesSection = () => {
                     <p className="text-white text-shadow-lg text-base text-center lg:text-lg">Confira alguns de nossos trabalhos mais recentes!</p>
                 </div>
                 <div className="w-full max-w-2xl bg-[#000000b8] px-9 pt-4 pb-8 sm:rounded-lg sm:px-10">
-                    {(audiosData as Audio[]).map((audio, index) => (
+                    {(audiosData as Audios).map((audio, index) => (
                         <div key={index} className="mb-2 border-b border-white">
                             <div className="flex items-center justify-between py-4">
                                 <div className="flex gap-3 sm:gap-4 items-center">
