@@ -32,7 +32,7 @@ const TestimonialsSection = () => {
                     <p className="text-[#1D0200] text-sm text-justify sm:text-center lg:text-lg">Conheça quem já passou por aqui e saiba como é a experiência de trabalhar conosco.</p>
                 </div>
 
-                <div className="w-full pb-10 sm:pb-15 lg:pb-20 xl:pb-30 2xl:px-15">
+                <div className="w-full pb-10 sm:pb-15 lg:pb-20 2xl:px-15">
                     <Carousel
                     setApi={setApi}
                     plugins={[
