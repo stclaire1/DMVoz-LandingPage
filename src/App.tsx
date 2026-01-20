@@ -3,6 +3,7 @@ import CampaignSection from "./components/CampaignSection"
 import Footer from "./components/Footer"
 import HeroSection from "./components/HeroSection"
 import SpecialtiesSection from "./components/SpecialtiesSection"
+import TestimonialsSection from "./components/TestimonialsSection"
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <CampaignSection />
       <SpecialtiesSection />
       <AboutUsSection />
+      <TestimonialsSection />
     </main>
     <Footer />
     </>
