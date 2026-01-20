@@ -46,9 +46,9 @@ const TestimonialsSection = () => {
                         loop: true
                     }}
                     className="w-full">
-                        <CarouselContent className="-ml-6 lg:-ml-4 2xl:px-8">
+                        <CarouselContent className="2xl:px-8">
                             {(testimonialsData as Testimonials).map((testimonial, index) => (
-                                <CarouselItem key={testimonial.author} className="pl-6 lg:p-4 basis-8/12 sm:basis-1/2 min-[500px]:basis-6/12 md:basis-4/12 lg:basis-2/7 xl:basis-1/4 2xl:basis-2/6">
+                                <CarouselItem key={testimonial.author} className="pb-4 basis-8/12 sm:basis-1/2 min-[500px]:basis-6/12 md:basis-4/12 lg:basis-2/7 xl:basis-1/4 2xl:basis-2/6">
                                     <div className={`transition-transform duration-500 h-full ${
                                     index !== current - 1
                                         ? "scale-[0.85] opacity-60 sm:scale-[0.8] md:scale-[0.75] lg:scale-[0.7]"
