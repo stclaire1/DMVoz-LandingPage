@@ -78,7 +78,7 @@ const SpecialtiesSection = () => {
             <div className='flex flex-col items-center gap-6 py-10 sm:gap-10 sm:px-15 sm:py-15 md:gap-12 lg:px-20 lg:py-20 xl:px-30 2xl:px-40'>
                 <div className="flex flex-col items-center gap-6">
                     <h2 className="text-white text-shadow-lg text-2xl font-bold lg:text-4xl 2xl:text-5xl">Especialidades</h2>
-                    <p className="text-white text-shadow-lg text-base text-center lg:text-lg">Confira alguns de nossos trabalhos mais recentes!</p>
+                    <p className="text-white text-shadow-lg text-base text-center px-10 lg:text-lg">Confira alguns de nossos trabalhos mais recentes!</p>
                 </div>
                 <div className="w-full max-w-2xl bg-[#000000b8] px-9 pt-4 pb-8 sm:rounded-lg sm:px-10">
                     {(audiosData as Audios).map((audio, index) => (
@@ -122,7 +122,7 @@ const SpecialtiesSection = () => {
                         </div>
                     ))}
                 </div>
-                <Button size="sm" className="duration-300 hover:bg-secondary cursor-pointer text-xs md:text-base md:p-5 lg:p-6 lg:text-lg 2xl:text-2xl 2xl:p-8">
+                <Button size="sm" className="duration-300 hover:bg-secondary cursor-pointer text-xs md:text-base md:p-5 lg:p-6 2xl:text-lg">
                     Entrar em contato
                 </Button>
             </div>
