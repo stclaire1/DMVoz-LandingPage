@@ -1,5 +1,6 @@
 import AboutUsSection from "./components/AboutUsSection"
 import CampaignSection from "./components/CampaignSection"
+import FAQSection from "./components/FAQSection"
 import Footer from "./components/Footer"
 import HeroSection from "./components/HeroSection"
 import SpecialtiesSection from "./components/SpecialtiesSection"
@@ -15,6 +16,7 @@ function App() {
       <SpecialtiesSection />
       <AboutUsSection />
       <TestimonialsSection />
+      <FAQSection />
     </main>
     <Footer />
     </>

@@ -1,0 +1,26 @@
+[
+    {
+        "question": "Vocês têm políticas de privacidade para proteger meus dados?",
+        "answer": "Sim, levamos a privacidade de nossos clientes muito a sério. Todas as informações fornecidas são mantidas em sigilo e usadas exclusivamente para a execução dos serviços contratados. Para mais detalhes, consulte nossa política de privacidade."
+    },
+    {
+        "question": "Como posso contratar os serviços da produtora?",
+        "answer": "Você pode contratar nossos serviços entrando em contato diretamente pelo nosso site ou telefone. Estamos disponíveis para esclarecer dúvidas e fornecer todas as informações necessárias."
+    },
+    {
+        "question": "Qual é o prazo de entrega para os serviços de locução?",
+        "answer": "O prazo de entrega varia conforme o projeto e o serviço contratado. Entre em contato para uma estimativa mais precisa."
+    },
+    {
+        "question": "Quais tipos de locução vocês oferecem?",
+        "answer": "Oferecemos uma ampla variedade de locuções, incluindo locuções comerciais, institucionais, promocionais, e-books, atendimento telefônico e muito mais. Nosso time é especializado em adaptar o tom e o estilo de acordo com a necessidade do seu projeto."
+    },
+    {
+        "question": "Posso agendar uma reunião para discutir meu projeto em detalhes?",
+        "answer": "Com certeza! Estamos à disposição para agendar uma reunião presencial ou virtual para entender melhor suas necessidades e oferecer a melhor solução para o seu projeto."
+    },
+    {
+        "question": "Vocês oferecem serviços de mixagem de áudio?",
+        "answer": "Sim, além da locução, oferecemos serviços completos de mixagem de áudio para garantir que seu projeto tenha a melhor qualidade sonora possível. Nosso time cuida de todos os detalhes, desde a captação até a finalização do áudio."
+    }
+]
