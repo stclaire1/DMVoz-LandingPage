@@ -13,11 +13,11 @@ const AboutUsSection = () => {
                     <h2 className="text-2xl font-bold w-fit border-t-2 border-primary pt-2 mb-5 lg:text-4xl 2xl:text-5xl">Sobre nós</h2>
                     <p className="text-justify text-sm lg:text-base"><b>Denys</b> é a voz e a alma da DMVoz! Com vasta experiência no mercado publicitário, atua como <b>locutor, produtor e diretor,</b> oferecendo serviços de alta qualidade diretamente de seu Studio.</p>
                 </div>
-                <div className="border border-primary rounded-lg p-5">
+                <div className="border border-primary rounded-sm p-5">
                     <h2 className="text-2xl font-semibold text-primary mb-3">Missão</h2>
                     <p className="text-justify text-sm lg:text-base">Nossa missão é fornecer serviços de <b>locução, produção e direção</b> que agreguem valor ao mercado publicitário. Com dedicação e profissionalismo, buscamos criar conteúdos que envolvam e impactem o público, ajudando nossos clientes a alcançarem seus objetivos a partir da nossa comunicação.</p>
                 </div>
-                <div className="border border-secondary rounded-lg p-5 md:hidden xl:block">
+                <div className="border border-secondary rounded-sm p-5 md:hidden xl:block">
                     <h2 className="text-2xl font-semibold text-secondary mb-3">Visão</h2>
                     <p className="text-justify text-sm lg:text-base">Ser reconhecido como uma referência no mercado publicitário, destacando-se pela <b>qualidade, inovação e comprometimento</b> em todos os projetos. Almejamos expandir nosso alcance, consolidando parcerias duradouras e inspirando confiança em todos os segmentos em que atuamos.</p>
                 </div>
@@ -27,38 +27,38 @@ const AboutUsSection = () => {
                     <img
                         src={mainImage}
                         alt="Sobre nós principal"
-                        className="rounded-xl object-cover col-span-2 row-span-2 h-full"
+                        className="rounded-md object-cover col-span-2 row-span-2 h-full"
                     />
 
                     <img
                         src={photo2}
                         alt="Sobre nós 2"
-                        className="rounded-xl object-cover h-full"
+                        className="rounded-md object-cover h-full"
                     />
                     <img
                         src={photo3}
                         alt="Sobre nós 2"
-                        className="rounded-xl object-cover"
+                        className="rounded-md object-cover"
 
                     />
 
                     <img
                         src={photo4}
                         alt="Sobre nós 3"
-                        className="rounded-xl object-cover" 
+                        className="rounded-md object-cover" 
 
                     />
 
                     <img
                         src={photo5}
                         alt="Sobre nós 6"
-                        className="rounded-xl object-cover"
+                        className="rounded-md object-cover"
                     />
 
                     <img
                         src={photo6}
                         alt="Sobre nós 5"
-                        className="rounded-xl object-cover"
+                        className="rounded-md object-cover"
 
                     />
                 </div>

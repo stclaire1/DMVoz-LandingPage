@@ -27,7 +27,7 @@ const CampaignSection = () => {
                             <CarouselItem key={campaign.videoId}>
                                 <div className="flex flex-col items-center gap-3 md:flex-row md:gap-10 lg:px-3 2xl:gap-24">
                                     <iframe
-                                        className="rounded-lg aspect-square min-[450px]:aspect-video md:max-w-1/2 lg:max-w-3/5 xl:max-w-1/2"
+                                        className="rounded-sm aspect-square min-[450px]:aspect-video md:max-w-1/2 lg:max-w-3/5 xl:max-w-1/2"
                                         src={`https://www.youtube.com/embed/${campaign.videoId}`}
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     />
