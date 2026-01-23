@@ -29,7 +29,7 @@ const ContactUsSection = () => {
                     </span>
                     <span className="flex flex-col gap-2">
                         <label htmlFor="" className="text-white text-sm">Telefone</label>
-                        <input type="text" placeholder="Informe seu telefone" className="border border-white rounded-sm p-3 text-white placeholder-white placeholder:opacity-85 placeholder:text-sm placeholder:italic" {...registerWithMask("phone", "(99) 99999-9999", { required: "É necessário informar seu telefone" })} />
+                        <input type="text" placeholder="(__) _____-____" className="border border-white rounded-sm p-3 text-white placeholder-white placeholder:opacity-85 placeholder:text-sm placeholder:italic" {...registerWithMask("phone", "(99) 99999-9999", { required: "É necessário informar seu telefone" })} />
                     </span>
                     <span className="flex flex-col gap-2">
                         <label htmlFor="" className="text-white text-sm">Email</label>
