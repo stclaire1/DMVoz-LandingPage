@@ -1,5 +1,5 @@
 import logo from '../../assets/images/white-logo.png'
-import { FaYoutube, FaInstagram } from "react-icons/fa";
+import { FaWhatsapp, FaYoutube, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -13,6 +13,13 @@ const Footer = () => {
             <div className='flex flex-col gap-4 sm:flex-col-reverse sm:border-l sm:border-gray-400 sm:pl-6'>
                 <p className='text-white text-xs italic text-center border-b border-gray-400 pb-4 sm:border-none sm:pb-0'>© 2025 DMVoz Produções. Todos os direitos reservados.</p>
                 <nav className='flex justify-center w-full gap-3 sm:justify-start'>
+                    <a 
+                        className='min-[400px]:hidden text-white hover:text-primary transition-colors duration-200'
+                        href="wa.link/idc14t"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <FaWhatsapp size={20} />
+                    </a>
                     <a 
                         className='text-white hover:text-primary transition-colors duration-200'
                         href="https://www.youtube.com/@amaral5446"
