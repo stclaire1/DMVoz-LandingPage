@@ -13,6 +13,7 @@ const ContactUsSection = () => {
         handleSubmit,
         formState: { errors },
         reset,
+        setValue,
     } = useForm<formData>()
     const registerWithMask = useHookFormMask(register);
     const form = useRef<HTMLFormElement | null>(null);
@@ -62,7 +63,7 @@ const ContactUsSection = () => {
         <section className="relative w-full bg-cover bg-center bg-[url(assets/images/background-recording.jpg)]">
             <div className="absolute inset-0 bg-black/80 backdrop-blur-xs" />
             <div className='flex flex-col items-center py-10 sm:py-15 lg:px-20 lg:py-20 xl:px-30 2xl:px-40 relative z-10'>
-                <div className="flex flex-col items-center md-6 sm:mb-10 md:mb-12">
+                <div className="flex flex-col items-center mb-6 sm:mb-10 md:mb-12">
                     <h2 className="text-white text-shadow-lg text-2xl font-bold mb-6 lg:text-4xl 2xl:text-5xl">Fale conosco!</h2>
                     <p className="text-white text-shadow-lg text-sm text-center px-10 max-w-md lg:text-lg lg:px-0 mb-2">Agora é com você! Deixe sua mensagem e entraremos em contato em breve.</p>
                     <p className="text-primary text-shadow-lg text-xs font-semibold italic">* Campos obrigatórios</p>
@@ -79,11 +80,14 @@ const ContactUsSection = () => {
                             className={`border rounded-sm p-3 text-white focus:outline-none placeholder:opacity-85 placeholder:text-xs placeholder:italic ${errors.name ? "border-red-500" : "border-white"}`}
                             {...register("name", {
                                 required: "É necessário informar seu nome completo",
-                                pattern: {
-                                    value: /^[A-Za-zÀ-ÿ\s]+$/,
-                                    message: "Digite apenas letras e espaços",
+                                })}
+                            onInput={(e) => {
+                                const v = e.currentTarget.value.replace(/[^A-Za-zÀ-ÿ\s']/g, "");
+                                if (v !== e.currentTarget.value) {
+                                    e.currentTarget.value = v;
+                                    setValue("name", v, { shouldValidate: false, shouldDirty: true });
                                 }
-                            })}
+                            }}
                         />
                         {errors.name && (
                             <p className="text-red-500 text-xs italic">{errors.name.message}</p>
@@ -128,7 +132,7 @@ const ContactUsSection = () => {
                             <p className="text-xs h-4 invisible">placeholder</p>
                         )}
                     </span>
-                    <span className="flex flex-col gap-2 mb-6">
+                    <span className="flex flex-col gap-2 mb-3">
                         <label htmlFor="" className="text-white text-sm"><span className="text-primary">* </span>Mensagem</label>
                         <textarea
                             placeholder="Digite sua dúvida, sugestão ou solicite um orçamento"
