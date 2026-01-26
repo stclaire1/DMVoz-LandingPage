@@ -1,73 +1,28 @@
-# React + TypeScript + Vite
+# Landing Page DM Voz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma landing page moderna construída com React, Vite e Tailwind CSS, focada em apresentar serviços, campanhas, especialidades, depoimentos e um formulário de contato integrado via EmailJS.
 
-Currently, two official plugins are available:
+## O que o projeto faz
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Exibe uma página inicial com seções: Banner, Campanhas, Especialidades da empresa, Sobre a empresa, Depoimentos de clientes, FAQ e Contato.
+- Formulário de contato com validação (React Hook Form), máscara para telefone e envio via EmailJS.
+- Toasts de notificação (Sonner) personalizados e escopados à seção de contato.
+- Carrossel de conteúdo (Embla Carousel) e componentes UI reaproveitáveis.
+- Botão flutuante de WhatsApp para contato rápido.
 
-## React Compiler
+## Por que é útil
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Interface responsiva e acessível com Tailwind CSS.
+- Arquitetura de componentes clara (React) e build rápido (Vite).
+- Configuração simples para envio de emails sem backend (EmailJS).
+- Fácil manutenção: dados estruturados em arquivos JSON no diretório `src/data`.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Principais Dependências
+- React 19, Vite 7, TypeScript
+- Tailwind CSS 4, tailwindcss-animate
+- React Hook Form, EmailJS (`@emailjs/browser`)
+- Sonner (toasts)
+- Embla Carousel (+ autoplay)
+- Radix UI (accordion/slot)
+- Lucide React (ícones)
+- `@digicroz/react-floating-whatsapp`
