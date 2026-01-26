@@ -2,6 +2,7 @@ import AboutUsSection from "./components/AboutUsSection"
 import CampaignSection from "./components/CampaignSection"
 import ContactUsSection from "./components/ContactUsSection"
 import FAQSection from "./components/FAQSection"
+import FloatingWhatsappBtn from "./components/FloatingWhatsappBtn"
 import Footer from "./components/Footer"
 import HeroSection from "./components/HeroSection"
 import SpecialtiesSection from "./components/SpecialtiesSection"
@@ -19,6 +20,7 @@ function App() {
       <TestimonialsSection />
       <FAQSection />
       <ContactUsSection />
+      <FloatingWhatsappBtn />
     </main>
     <Footer />
     </>
