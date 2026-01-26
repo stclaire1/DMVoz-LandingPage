@@ -122,7 +122,11 @@ const SpecialtiesSection = () => {
                         </div>
                     ))}
                 </div>
-                <Button size="sm" className="duration-300 hover:bg-secondary cursor-pointer text-xs md:text-base md:p-5 lg:p-6 2xl:text-lg">
+                <Button size="lg" className="duration-300 hover:bg-secondary cursor-pointer text-sm md:text-base md:p-5 lg:p-6 2xl:text-lg" 
+                onClick={() => {
+                    const el = document.getElementById('contactUsSection');
+                    el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }}>
                     Entrar em contato
                 </Button>
             </div>

@@ -60,7 +60,7 @@ const ContactUsSection = () => {
     };
 
     return (
-        <section className="relative w-full bg-cover bg-center bg-[url(assets/images/background-recording.jpg)]">
+        <section className="relative w-full bg-cover bg-center bg-[url(assets/images/background-recording.jpg)]"id='contactUsSection'>
             <div className="absolute inset-0 bg-black/80 backdrop-blur-xs" />
             <div className='flex flex-col items-center py-10 sm:py-15 lg:px-20 lg:py-20 xl:px-30 2xl:px-40 relative z-10'>
                 <div className="flex flex-col items-center mb-6 sm:mb-10 md:mb-12">
@@ -148,7 +148,7 @@ const ContactUsSection = () => {
                             <p className="text-xs h-4 invisible">placeholder</p>
                         )}
                     </span>
-                    <Button size="lg" type='submit' className="duration-300 hover:bg-secondary cursor-pointer text-xs md:text-base md:p-5 lg:p-6 2xl:text-lg" disabled={loading}>
+                    <Button size="lg" type='submit' className="duration-300 hover:bg-secondary cursor-pointer text-sm md:text-base md:p-5 lg:p-6 2xl:text-lg" disabled={loading}>
                         {loading ? (
                             <>
                                 <Spinner className="mr-2" data-icon="inline-start" />

@@ -11,7 +11,15 @@ const HeroSection = () => {
             <h1 className='text-white text-shadow-lg text-center text-2xl cursor-default sm:text-4xl md:text-5xl/snug lg:text-7xl/tight 2xl:text-8xl/tight'>Transforme suas <b className="duration-700 hover:text-primary cursor-default">ideias</b> em realidade com a <b className="duration-700 hover:text-primary cursor-default">nossa voz!</b></h1>
             <img src={sound} alt="Ícone de ondas sonoras" className='max-w-[115px] w-full sm:max-w-1/4 2xl:max-w-1/5' />
           </div>
-          <Button size="sm" className="duration-300 hover:bg-secondary cursor-pointer text-xs md:text-base md:p-5 lg:p-6 2xl:text-lg">Saiba como funciona</Button>
+          <Button
+            size="lg" className="duration-300 hover:bg-secondary cursor-pointer text-sm  md:text-base md:p-5 lg:p-6 2xl:text-lg"
+            onClick={() => {
+              const el = document.getElementById('faqSection');
+              el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }}
+          >
+            Saiba como funciona
+          </Button>
       </div>
     </header>
   );
