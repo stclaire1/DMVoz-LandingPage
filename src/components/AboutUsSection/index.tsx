@@ -1,4 +1,4 @@
-import mainImage from "../../assets/images/pictures/main.jpg"
+import mainImage from "../../assets/images/pictures/main.png"
 import photo2 from "../../assets/images/pictures/working.png"
 import photo3 from "../../assets/images/pictures/soundTable.jpg"
 import photo4 from "../../assets/images/pictures/microphone.jpg"
