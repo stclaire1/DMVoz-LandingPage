@@ -8,7 +8,7 @@ import photo6 from "../../assets/images/pictures/award.jpg"
 const AboutUsSection = () => {
     return (
         <section className="w-full flex gap-20 p-10 sm:px-15 sm:py-15 md:flex-row md:items-center lg:px-20 lg:py-20 xl:px-30 xl:gap-26 2xl:max-w-[1580px]">
-            <div className="flex flex-col gap-12 md:w-1/2 md:gap-7 xl:w-3/5 2xl:w-1/2">
+            <div className="flex flex-col gap-12 md:w-1/2 md:gap-7 2xl:w-1/2">
                 <div>
                     <h2 className="text-2xl font-bold w-fit border-t-2 border-primary pt-2 mb-5 lg:text-4xl 2xl:text-5xl">Sobre nós</h2>
                     <p className="text-justify text-sm lg:text-base"><b>Denys</b> é a voz e a alma da DMVoz! Com vasta experiência no mercado publicitário, atua como <b>locutor, produtor e diretor,</b> oferecendo serviços de alta qualidade diretamente de seu Studio.</p>
@@ -23,11 +23,11 @@ const AboutUsSection = () => {
                 </div>
             </div>
             <div className="hidden md:flex md:flex-col md:w-1/2">
-                <div className="grid grid-cols-3 grid-rows-3 gap-2 w-full h-auto">
+                <div className="grid grid-cols-3 auto-rows-auto gap-2 w-full h-auto">
                     <img
                         src={mainImage}
                         alt="Sobre nós principal"
-                        className="rounded-md object-cover col-span-2 row-span-2 h-full"
+                        className="rounded-md object-cover col-span-2 row-span-2 h-auto"
                     />
 
                     <img
@@ -38,7 +38,7 @@ const AboutUsSection = () => {
                     <img
                         src={photo3}
                         alt="Sobre nós 2"
-                        className="rounded-md object-cover"
+                        className="rounded-md object-cover h-auto"
 
                     />
 
