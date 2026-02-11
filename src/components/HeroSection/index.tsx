@@ -1,13 +1,14 @@
 import logo from '../../assets/images/white-logo.png';
 import { Button } from '../ui/button';
 import sound from '../../assets/images/sound.png';
+import 'animate.css'
 
 const HeroSection = () => {
   return (
     <header className='bg-[url(assets/images/background.png)] bg-cover bg-center'>
       <div className='flex flex-col items-center gap-6 p-10 lg:px-20 xl:gap-12 2xl:px-30 2xl:max-w-[1580px] 2xl:m-auto' >
           <img src={logo} alt='Logo DMVoz Produções' className='w-[110px] md:w-[150px] lg:w-1/6' />
-          <div className='flex flex-col items-center'>
+          <div className='animate__animated animate__fadeIn animate__slow flex flex-col items-center'>
             <h1 className='text-white text-shadow-lg text-center text-2xl cursor-default sm:text-4xl md:text-5xl/snug lg:text-7xl/tight 2xl:text-8xl/tight'>Transforme suas <b className="duration-700 hover:text-primary cursor-default">ideias</b> em realidade com a <b className="duration-700 hover:text-primary cursor-default">nossa voz!</b></h1>
             <img src={sound} alt="Ícone de ondas sonoras" className='max-w-[115px] w-full sm:max-w-1/4 2xl:max-w-1/5' />
           </div>
