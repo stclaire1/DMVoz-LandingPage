@@ -158,7 +158,7 @@ const ContactUsSection = () => {
                         )}
                     </Button>
                 </form>
-                <Toaster id="contact-toaster" richColors={false} />
+                <Toaster id="contact-toaster" position="top-right" richColors={false} />
             </div>
         </section>
     )
