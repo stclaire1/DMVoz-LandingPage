@@ -5,7 +5,7 @@ import 'animate.css'
 
 const HeroSection = () => {
   return (
-    <header className='bg-[url(assets/images/background.png)] bg-cover bg-center'>
+    <header className='bg-[url(assets/images/background.png)] bg-cover bg-center min-h-min'>
       <div className='flex flex-col items-center gap-6 p-10 lg:px-20 xl:gap-12 2xl:px-30 2xl:max-w-[1580px] 2xl:m-auto' >
           <img src={logo} alt='Logo DMVoz Produções' className='w-[110px] md:w-[150px] lg:w-1/6' />
           <div className='animate__animated animate__fadeIn animate__slow flex flex-col items-center'>

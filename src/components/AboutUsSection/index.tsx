@@ -1,9 +1,9 @@
 import mainImage from "../../assets/images/pictures/main.png"
 import photo2 from "../../assets/images/pictures/working.png"
 import photo3 from "../../assets/images/pictures/soundTable.jpg"
-import photo4 from "../../assets/images/pictures/microphone.jpg"
+import photo4 from "../../assets/images/pictures/microphone.png"
 import photo5 from "../../assets/images/pictures/setup.jpg"
-import photo6 from "../../assets/images/pictures/award.jpg"
+import photo6 from "../../assets/images/pictures/award.png"
 
 const AboutUsSection = () => {
     return (
