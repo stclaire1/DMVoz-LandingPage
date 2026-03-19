@@ -1,28 +1,36 @@
-# Landing Page DM Voz
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Uma landing page moderna construída com React, Vite e Tailwind CSS, focada em apresentar serviços, campanhas, especialidades, depoimentos e um formulário de contato integrado via EmailJS.
+## Getting Started
 
-## O que o projeto faz
+First, run the development server:
 
-- Exibe uma página inicial com seções: Banner, Campanhas, Especialidades da empresa, Sobre a empresa, Depoimentos de clientes, FAQ e Contato.
-- Formulário de contato com validação (React Hook Form), máscara para telefone e envio via EmailJS.
-- Toasts de notificação (Sonner) personalizados e escopados à seção de contato.
-- Carrossel de conteúdo (Embla Carousel) e componentes UI reaproveitáveis.
-- Botão flutuante de WhatsApp para contato rápido.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Por que é útil
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- Interface responsiva e acessível com Tailwind CSS.
-- Arquitetura de componentes clara (React) e build rápido (Vite).
-- Configuração simples para envio de emails sem backend (EmailJS).
-- Fácil manutenção: dados estruturados em arquivos JSON no diretório `src/data`.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Principais Dependências
-- React 19, Vite 7, TypeScript
-- Tailwind CSS 4, tailwindcss-animate
-- React Hook Form, EmailJS (`@emailjs/browser`)
-- Sonner (toasts)
-- Embla Carousel (+ autoplay)
-- Radix UI (accordion/slot)
-- Lucide React (ícones)
-- `@digicroz/react-floating-whatsapp`
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
