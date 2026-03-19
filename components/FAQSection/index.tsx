@@ -5,7 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { faq } from "@/app/lib/data/faq";
-import type { FAQs } from "@/.next/types/faq";
+import type { FAQs } from "@/types/faq";
 
 const FAQSection = () => {
     return (
