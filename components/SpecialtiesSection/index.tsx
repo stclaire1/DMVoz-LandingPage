@@ -6,6 +6,7 @@ import ResponsiveAudioPlayer from './components/ResponsiveAudioPlayer';
 import { audios } from '@/app/lib/data/audios';
 import type { Audios } from '@/types/audio';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 const SpecialtiesSection = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -75,7 +76,14 @@ const SpecialtiesSection = () => {
     }
 
     return (
-        <section className="w-full bg-[url('/images/background2.png')] bg-cover bg-center">
+        <section className='relative w-full min-h-min overflow-hidden'>
+            <Image
+                src="/images/background2.png"
+                alt="Descrição da imagem de fundo"
+                fill
+                className="object-cover object-center"
+                style={{ zIndex: -1 }} 
+            />
             <div className='flex flex-col items-center gap-6 py-10 sm:gap-10 sm:px-15 sm:py-15 md:gap-12 lg:px-20 lg:py-20 xl:px-30 2xl:px-40'>
                 <div className="flex flex-col items-center gap-6">
                     <h2 className="text-white text-shadow-lg text-2xl font-bold lg:text-4xl 2xl:text-5xl">Especialidades</h2>

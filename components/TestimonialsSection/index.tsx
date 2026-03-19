@@ -6,6 +6,7 @@ import TestimonialCard from "./components/TestimonialCard";
 import { testimonials } from "@/app/lib/data/testimonials";
 import Autoplay from "embla-carousel-autoplay";
 import React from "react";
+import Image from "next/image";
 
 const TestimonialsSection = () => {
 
@@ -26,7 +27,14 @@ const TestimonialsSection = () => {
     }, [api]);
 
     return (
-        <section className="w-full bg-[url('/images/background-orange.jpg')] bg-cover bg-center">
+        <section className='relative w-full min-h-min overflow-hidden'>
+            <Image
+                src="/images/background-orange.jpg"
+                alt="Descrição da imagem de fundo"
+                fill
+                className="object-cover object-center"
+                style={{ zIndex: -1 }} 
+            />
             <div className="flex flex-col items-center gap-12 lg:px-0 2xl:max-w-[1540px] 2xl:px-30 mx-auto">
                 <div className='flex flex-col items-center gap-6 text-center mt-10 mx-10 max-w-xs sm:mt-13 lg:mt-18 lg:mx-0 lg:max-w-xl'>
                     <h2 className='text-[#1D0200] text-2xl font-bold lg:text-4xl 2xl:text-5xl'>Veja o que os nossos parceiros tem a dizer</h2>
