@@ -2,7 +2,7 @@
 
 import { useRef, useState, useEffect } from 'react';
 import { FaPlay, FaPause } from 'react-icons/fa';
-import type { Audio } from '@/.next/types/audio';
+import type { Audio } from '@/types/audio';
 
 interface ResponsiveAudioPlayerProps {
 	audio: Audio;

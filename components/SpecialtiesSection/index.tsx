@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { FaPlay, FaTimes, FaDownload } from 'react-icons/fa';
 import ResponsiveAudioPlayer from './components/ResponsiveAudioPlayer';
 import { audios } from '@/app/lib/data/audios';
-import type { Audios } from '@/.next/types/audio';
+import type { Audios } from '@/types/audio';
 import { Button } from '@/components/ui/button';
 
 const SpecialtiesSection = () => {

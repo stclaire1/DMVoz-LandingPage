@@ -3,7 +3,7 @@
 import { useRef, useState } from 'react';
 import { Button } from '../ui/button';
 import { useForm, type SubmitHandler } from "react-hook-form"
-import type { formData } from '@/.next/types/formData';
+import type { formData } from '@/types/formData';
 import { useHookFormMask } from 'use-mask-input';
 import emailjs from '@emailjs/browser';
 import { Spinner } from "@/components/ui/spinner"

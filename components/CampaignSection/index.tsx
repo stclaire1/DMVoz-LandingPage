@@ -1,7 +1,7 @@
 "use client";
 
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
-import type { Videos } from "@/.next/types/videos";
+import type { Videos } from "@/types/videos";
 import { videos } from "@/app/lib/data/videos";
 import Autoplay from "embla-carousel-autoplay"
 
