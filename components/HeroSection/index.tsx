@@ -8,7 +8,14 @@ import Image from 'next/image';
 
 const HeroSection = () => {
   return (
-    <header className='bg-[url("/images/background.png")] bg-cover bg-center min-h-min'>
+    <header className='relative w-full min-h-min overflow-hidden'> 
+      <Image
+        src="/images/background.png"
+        alt="Descrição da imagem de fundo"
+        fill
+        className="object-cover object-center"
+        style={{ zIndex: -1 }} 
+      />
       <div className='flex flex-col items-center gap-6 p-10 lg:px-20 xl:gap-12 2xl:px-30 2xl:max-w-[1580px] 2xl:m-auto' >
           <Image src={logo} alt='Logo DMVoz Produções' className='w-[110px] md:w-[150px] lg:w-1/6' />
           <div className='animate__animated animate__fadeIn animate__slow flex flex-col items-center'>

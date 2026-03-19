@@ -8,6 +8,7 @@ import { useHookFormMask } from 'use-mask-input';
 import emailjs from '@emailjs/browser';
 import { Spinner } from "@/components/ui/spinner"
 import { toast, Toaster } from "sonner"
+import Image from 'next/image';
 
 const ContactUsSection = () => {
     const {
@@ -62,7 +63,14 @@ const ContactUsSection = () => {
     };
 
     return (
-        <section className="relative w-full bg-cover bg-center bg-[url('/images/background-recording.jpg')]"id='contactUsSection'>
+        <section className='relative w-full min-h-min overflow-hidden' id='contactUsSection'>
+            <Image
+                src="/images/background-recording.jpg"
+                alt="Descrição da imagem de fundo"
+                fill
+                className="object-cover object-center"
+                style={{ zIndex: -1 }} 
+            />
             <div className="absolute inset-0 bg-black/80 backdrop-blur-xs" />
             <div className='flex flex-col items-center py-10 sm:py-15 lg:px-20 lg:py-20 xl:px-30 2xl:px-40 relative z-10'>
                 <div className="flex flex-col items-center mb-6 sm:mb-10 md:mb-12">
