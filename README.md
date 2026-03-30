@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DMVoz Producoes - Landing Page
 
-## Getting Started
+Landing page institucional para a empresa DMVoz Producoes, focada na apresentação de serviços de locução, portfólio de campanhas, demonstrações de audio, depoimentos, FAQ e captação de leads via formulário.
 
-First, run the development server:
+## Site em producao
+
+- https://dmvozproducoes.com.br
+
+## Visao geral
+
+Este projeto foi construido com Next.js (App Router) e organiza a home em blocos de conteúdo reutilizáveis. O foco principal é: apresentar autoridade da marca, mostrar trabalhos reais e facilitar contato por formulario e WhatsApp.
+
+![Print do site](<preview.png>)
+
+## Stack tecnica
+
+- Next.js 16.2 (App Router)
+- React 19
+- TypeScript 5
+- Tailwind CSS 4
+- shadcn/ui + Radix primitives
+- Embla Carousel (com autoplay)
+- React Hook Form + use-mask-input
+- EmailJS (envio de formulario)
+- Floating WhatsApp widget
+- Sonner (toasts)
+
+## Arquitetura do projeto
+
+```text
+app/
+	layout.tsx                # metadata global e fonte Montserrat
+	page.tsx                  # composicao da home
+	globals.css               # tokens de tema e estilos base
+	lib/data/
+		audios.js               # lista de demos de audio
+		videos.js               # lista de campanhas (YouTube)
+		testimonials.js         # lista de depoimentos
+		faq.js                  # perguntas frequentes
+
+components/
+	HeroSection/
+	CampaignSection/
+	SpecialtiesSection/
+		components/ResponsiveAudioPlayer.tsx
+	AboutUsSection/
+	TestimonialsSection/
+		components/TestimonialCard.tsx
+	FAQSection/
+	ContactUsSection/
+	FloatingWhatsappBtn/
+	Footer/
+	ui/                       # primitives de UI (accordion, button, carousel, etc.)
+
+types/
+	audio.ts
+	videos.ts
+	testimonials.ts
+	faq.ts
+	formData.ts
+```
+
+## Scripts disponiveis
+
+```bash
+npm run dev     # sobe ambiente de desenvolvimento
+npm run build   # gera build de producao
+npm run start   # inicia app em modo producao
+npm run lint    # executa lint
+```
+
+## Como rodar localmente
+
+### 1. Pre-requisitos
+
+- Node.js 20+ recomendado
+- npm 10+ recomendado
+
+### 2. Instalar dependencias
+
+```bash
+npm install
+```
+
+### 3. Executar ambiente de desenvolvimento
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Gestao de conteudo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Edições de conteudo podem ser feitas sem alterar logica de componentes:
 
-## Learn More
+- Videos: `app/lib/data/videos.js`
+- Audios: `app/lib/data/audios.js`
+- Depoimentos: `app/lib/data/testimonials.js`
+- FAQ: `app/lib/data/faq.js`
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Arquivos de midia ficam em `public/` (ex.: `public/audios` e `public/images`).
