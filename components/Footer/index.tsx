@@ -10,11 +10,11 @@ const Footer = () => {
             <Image
                 src={logo}
                 alt="Logo DMVoz Produções"
-                className='w-[90px] md:w-[120px] cursor-pointer'
+                className='w-22.5 md:w-30 cursor-pointer'
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             />
             <div className='flex flex-col gap-4 sm:flex-col-reverse sm:border-l sm:border-gray-400 sm:pl-6'>
-                <p className='text-white text-xs italic text-center border-b border-gray-400 pb-4 sm:border-none sm:pb-0'>© 2025 DMVoz Produções. Todos os direitos reservados.</p>
+                <p className='text-white text-xs italic text-center border-b border-gray-400 pb-4 sm:border-none sm:pb-0'>© 2026 DMVoz Produções. Todos os direitos reservados.</p>
                 <nav className='flex justify-center w-full gap-3 sm:justify-start'>
                     <a 
                         className='min-[400px]:hidden text-white hover:text-primary transition-colors duration-200'

@@ -56,7 +56,6 @@ const ContactUsSection = () => {
                 },
                 toasterId: "contact-toaster",
             });
-            console.log("Erro: ", error);
         } finally {
             setLoading(false);
         }
@@ -148,7 +147,7 @@ const ContactUsSection = () => {
                             placeholder="Digite sua dúvida, sugestão ou solicite um orçamento"
                             rows={4}
                             aria-invalid={errors.message ? "true" : "false"}
-                            className={`border rounded-sm p-3 text-white focus:outline-none min-h-[120px] placeholder:opacity-85 placeholder:text-xs placeholder:italic ${errors.message ? "border-red-500" : "border-white"}`}
+                            className={`border rounded-sm p-3 text-white focus:outline-none min-h-30 placeholder:opacity-85 placeholder:text-xs placeholder:italic ${errors.message ? "border-red-500" : "border-white"}`}
                             {...register("message", { required: "Por favor, escreva o motivo do seu contato!"  })}
                         />
                         {errors.message && (
