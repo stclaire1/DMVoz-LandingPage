@@ -12,7 +12,6 @@ const TestimonialsSection = () => {
 
     const [api, setApi] = React.useState<CarouselApi>();
     const [current, setCurrent] = React.useState(0);
-    console.log("current :", current);
 
     React.useEffect(() => {
         if (!api) {
@@ -35,7 +34,7 @@ const TestimonialsSection = () => {
                 className="object-cover object-center"
                 style={{ zIndex: -1 }} 
             />
-            <div className="flex flex-col items-center gap-12 lg:px-0 2xl:max-w-[1540px] 2xl:px-30 mx-auto">
+            <div className="flex flex-col items-center gap-12 lg:px-0 2xl:max-w-385 2xl:px-30 mx-auto">
                 <div className='flex flex-col items-center gap-6 text-center mt-10 mx-10 max-w-xs sm:mt-13 lg:mt-18 lg:mx-0 lg:max-w-xl'>
                     <h2 className='text-[#1D0200] text-2xl font-bold lg:text-4xl 2xl:text-5xl'>Veja o que os nossos parceiros tem a dizer</h2>
                     <p className="text-[#1D0200] text-sm text-justify sm:text-center lg:text-lg">Conheça quem já passou por aqui e saiba como é a experiência de trabalhar conosco.</p>
